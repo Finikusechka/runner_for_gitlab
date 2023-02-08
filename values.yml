@@ -1,0 +1,13 @@
+runners:
+  config: |
+    [[runners]]
+      [runners.kubernetes]
+        image = "ubuntu:20.04"
+        privileged = true
+        volumes = ["/certs/client", "/cache"]
+gitlabUrl: https://gitlab.com
+runnerRegistrationToken: "GR1348941aU5afmbGFQD1u-iQUpSS"
+
+rbac:
+  create: true
+

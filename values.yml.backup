@@ -1,0 +1,15 @@
+runners:
+  env:
+    DOCKER_TLS_CERTDIR: ""
+  config: |
+    [[runners]]
+      [runners.kubernetes]
+        image = "ubuntu:20.04"
+        privileged = true
+        tls_verify = false
+gitlabUrl: https://gitlab.com
+runnerRegistrationToken: "GR1348941aU5afmbGFQD1u-iQUpSS"
+
+rbac:
+  create: true
+
